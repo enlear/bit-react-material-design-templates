@@ -1,2 +1,2 @@
-# React Material + Bit Harmony + Design Templates
-Design system with templates built using React Material and Bit Harmony
+# React Material + Bit Harmony + Themes
+Design system with themes built using React Material and Bit Harmony
