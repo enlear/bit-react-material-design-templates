@@ -81,12 +81,6 @@ export function Profile({ name, title,  workSummary }: ProfileProps) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
         <Button variant="contained" color="primary">
           Hire
         </Button>

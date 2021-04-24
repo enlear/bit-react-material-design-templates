@@ -13,6 +13,12 @@
         "mainFile": "index.ts",
         "rootDir": "enlear.react-material-themes/themes/business-theme"
     },
+    "themes/casual-theme": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "enlear.react-material-themes/themes/casual-theme"
+    },
     "widgets/header": {
         "scope": "",
         "version": "",
