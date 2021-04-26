@@ -1,28 +1,33 @@
-import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import { Header } from '@enlear/react-material-themes.widgets.header';
+import { Profile, ProfileProps } from '@enlear/react-material-themes.widgets.profile';
 import Grid from '@material-ui/core/Grid';
+import React from 'react';
 
 export type DashboardProps = {
- 
+  /**
+   * Profiles array
+   */
+  profiles: ProfileProps[]
 };
 
-export function Dashboard() {
+export function Dashboard({ profiles }: DashboardProps) {
 
   return (
-     <Grid container direction="column">
-          <Grid item>
-            <Header></Header>
-          </Grid>
-          <Grid item container>
-             
-          </Grid>
+    <Grid container direction="column">
+      <Grid item>
+        <Header title="Employees"></Header>
       </Grid>
+      <Grid item container spacing={2}>
+        {profiles.map((profile, key) => (
+          <Grid item  key={key}>
+            <Profile
+              name={profile.name}
+              title={profile.title}
+              workSummary={profile.workSummary}
+              onHire={() => { alert("The person is hired!"); }}></Profile>
+          </Grid>
+        ))}
+      </Grid>
+    </Grid>
   );
 }

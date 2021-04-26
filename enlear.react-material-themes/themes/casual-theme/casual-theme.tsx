@@ -1,36 +1,34 @@
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
-import red from '@material-ui/core/colors/red'
 
-export interface CasualThemeProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface CasualThemeProps extends React.HTMLAttributes<React.ReactNode> {
 };
 
 export function CasualTheme({ children }: CasualThemeProps) {
- const casualTheme = createMuiTheme({ overrides: {
-    // Style sheet name ⚛️
-    MuiButton: {
-      // Name of the rule
-      text: {
-        // Some CSS
-        color: 'white', fontFamily: 'Bangers, Arial'
-      },
-    },
-  },
-     shape: {
-      borderRadius: 15,
-    }, 
+  const casualTheme = createMuiTheme({
     typography: {
-     
-    button: {
-        background: red[400]
+      fontFamily: [
+        'Cursive',
+        'New Tegomin'
+      ].join(',')
     },
-  },
-});
+    palette: {
+      primary: {
+        main: "#46AD8D",
+        contrastText: "#fff" //button text white instead of black
+      },
+      background: {
+        default: "#394764"
+      }
+    },
+    shape: {
+      borderRadius: 15,
+    }
+  });
 
   return (
-      <ThemeProvider theme={casualTheme}>
-        {children}
-      </ThemeProvider>
+    <ThemeProvider theme={casualTheme}>
+      {children}
+    </ThemeProvider>
   );
 }

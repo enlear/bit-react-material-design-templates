@@ -1,12 +1,11 @@
-import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
+import IconButton from '@material-ui/core/IconButton';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
- 
+import React from 'react';
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -21,7 +20,14 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export function Header() {
+export type HeaderProps = {
+  /**
+   * Header title
+   */
+  title: string,
+};
+
+export function Header({ title }: HeaderProps) {
   const classes = useStyles();
   return (
     <AppBar position="static">
@@ -30,7 +36,7 @@ export function Header() {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" className={classes.title}>
-          Employees
+          {title}
         </Typography>
       </Toolbar>
     </AppBar>

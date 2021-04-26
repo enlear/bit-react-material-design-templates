@@ -1,11 +1,17 @@
-import React from 'react';
 import { render } from '@testing-library/react';
-import { BasicDashboard } from './dashboard.composition';
+import React from 'react';
+import { BusinessDashboard, CasualDashboard } from './dashboard.composition';
 
 describe('dashboard', () => {
-  it('should render with the correct text', () => {
-    const { getByText } = render(<BasicDashboard />);
-    const rendered = getByText('hello from Dashboard');
-    expect(rendered).toBeTruthy();
+  it('business dashboard should contain 4 profiles in the grid', () => {
+    const { getAllByText } = render(<BusinessDashboard />);
+    const rendered = getAllByText('Hire');
+    expect(rendered).toHaveLength(4);
+  });
+
+  it('casual dashboard should contain 4 profiles in the grid', () => {
+    const { getAllByText } = render(<CasualDashboard />);
+    const rendered = getAllByText('Hire');
+    expect(rendered).toHaveLength(4);
   });
 });

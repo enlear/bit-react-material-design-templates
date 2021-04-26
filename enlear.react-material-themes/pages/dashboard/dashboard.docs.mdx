@@ -4,18 +4,19 @@ description: 'A Dashboard component.'
 ---
 
 import { Dashboard } from './dashboard';
+import { ProfileProps } from '@enlear/react-material-themes.widgets.profile';
 
 Dashboard example:
 
-A simple Dashboard component with some text
+A simple Dashboard with header and profiles grid
 
 Code Snippet:
 ```js
-<Dashboard text="hello from Dashboard" />
+    <Dashboard profiles={[{name: "Cheryl Chavez", title: "Software Developer", workSummary: "Developer with experiance on developing, testing and implementing new software programs."}]}></Dashboard>
 ```
 
 
 Live Playground:
 ```js live
-<Dashboard text="hello from Dashboard" />
+    <Dashboard profiles={[{name: "Cheryl Chavez", title: "Software Developer", workSummary: "Developer with experiance on developing, testing and implementing new software programs."}]}></Dashboard>
 ```

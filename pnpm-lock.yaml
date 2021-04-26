@@ -1,31 +1,45 @@
 importers:
   .:
     dependencies:
-      '@material-ui/core': registry.npmjs.org/@material-ui/core/4.11.3_@types+react@16.14.5
-      '@material-ui/icons': registry.npmjs.org/@material-ui/icons/4.11.2_a12b318ac2ee26da9e3c65b6d42fff12
+      '@material-ui/core': registry.npmjs.org/@material-ui/core/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc
+      '@material-ui/icons': registry.npmjs.org/@material-ui/icons/4.11.2_2ae92ea2de35ea10b2d05a19d31c4090
+      core-js: registry.npmjs.org/core-js/3.8.3
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.22
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6_react-dom@16.13.1+react@16.13.1
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@types/react': registry.npmjs.org/@types/react/16.9.43
+      '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
     specifiers:
       '@babel/runtime': 7.12.18
       '@material-ui/core': 4.11.3
       '@material-ui/icons': 4.11.2
       '@testing-library/react': 11.2.6
-      '@types/jest': ^26.0.22
+      '@types/jest': 26.0.20
       '@types/node': 12.20.4
-      '@types/react': ^16.14.5
+      '@types/react': 16.9.43
+      '@types/react-router-dom': 5.1.7
+      core-js: 3.8.3
+      react: 16.13.1
+      react-dom: 16.13.1
   enlear.react-material-themes/pages/dashboard:
     specifiers: {}
+  enlear.react-material-themes/themes/business-theme:
+    specifiers: {}
   enlear.react-material-themes/themes/casual:
+    specifiers: {}
+  enlear.react-material-themes/themes/casual-theme:
     specifiers: {}
   enlear.react-material-themes/themes/primary:
     specifiers: {}
   enlear.react-material-themes/themes/theme-primary:
     specifiers: {}
   enlear.react-material-themes/themes/theme-secondary:
+    specifiers: {}
+  enlear.react-material-themes/widgets/header:
     specifiers: {}
   enlear.react-material-themes/widgets/product:
     specifiers: {}
@@ -116,21 +130,23 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@jest/types/-/types-26.6.2.tgz
     version: 26.6.2
-  registry.npmjs.org/@material-ui/core/4.11.3_@types+react@16.14.5:
+  registry.npmjs.org/@material-ui/core/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
-      '@material-ui/styles': registry.npmjs.org/@material-ui/styles/4.11.3_@types+react@16.14.5
-      '@material-ui/system': registry.npmjs.org/@material-ui/system/4.11.3_@types+react@16.14.5
-      '@material-ui/types': registry.npmjs.org/@material-ui/types/5.1.0_@types+react@16.14.5
-      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@material-ui/styles': registry.npmjs.org/@material-ui/styles/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc
+      '@material-ui/system': registry.npmjs.org/@material-ui/system/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc
+      '@material-ui/types': registry.npmjs.org/@material-ui/types/5.1.0_@types+react@16.9.43
+      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2_react-dom@16.13.1+react@16.13.1
+      '@types/react': registry.npmjs.org/@types/react/16.9.43
       '@types/react-transition-group': registry.npmjs.org/@types/react-transition-group/4.4.1
       clsx: registry.npmjs.org/clsx/1.1.1
       hoist-non-react-statics: registry.npmjs.org/hoist-non-react-statics/3.3.2
       popper.js: registry.npmjs.org/popper.js/1.16.1-lts
       prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
       react-is: registry.npmjs.org/react-is/17.0.2
-      react-transition-group: registry.npmjs.org/react-transition-group/4.4.1
+      react-transition-group: registry.npmjs.org/react-transition-group/4.4.1_react-dom@16.13.1+react@16.13.1
     dev: false
     engines:
       node: '>=8.0.0'
@@ -148,11 +164,13 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@material-ui/core/-/core-4.11.3.tgz
     version: 4.11.3
-  registry.npmjs.org/@material-ui/icons/4.11.2_a12b318ac2ee26da9e3c65b6d42fff12:
+  registry.npmjs.org/@material-ui/icons/4.11.2_2ae92ea2de35ea10b2d05a19d31c4090:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@material-ui/core': registry.npmjs.org/@material-ui/core/4.11.3_@types+react@16.14.5
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@material-ui/core': registry.npmjs.org/@material-ui/core/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc
+      '@types/react': registry.npmjs.org/@types/react/16.9.43
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
     dev: false
     engines:
       node: '>=8.0.0'
@@ -171,13 +189,13 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@material-ui/icons/-/icons-4.11.2.tgz
     version: 4.11.2
-  registry.npmjs.org/@material-ui/styles/4.11.3_@types+react@16.14.5:
+  registry.npmjs.org/@material-ui/styles/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
       '@emotion/hash': registry.npmjs.org/@emotion/hash/0.8.0
-      '@material-ui/types': registry.npmjs.org/@material-ui/types/5.1.0_@types+react@16.14.5
-      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@material-ui/types': registry.npmjs.org/@material-ui/types/5.1.0_@types+react@16.9.43
+      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2_react-dom@16.13.1+react@16.13.1
+      '@types/react': registry.npmjs.org/@types/react/16.9.43
       clsx: registry.npmjs.org/clsx/1.1.1
       csstype: registry.npmjs.org/csstype/2.6.17
       hoist-non-react-statics: registry.npmjs.org/hoist-non-react-statics/3.3.2
@@ -190,6 +208,8 @@ packages:
       jss-plugin-rule-value-function: registry.npmjs.org/jss-plugin-rule-value-function/10.6.0
       jss-plugin-vendor-prefixer: registry.npmjs.org/jss-plugin-vendor-prefixer/10.6.0
       prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
     dev: false
     engines:
       node: '>=8.0.0'
@@ -207,13 +227,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@material-ui/styles/-/styles-4.11.3.tgz
     version: 4.11.3
-  registry.npmjs.org/@material-ui/system/4.11.3_@types+react@16.14.5:
+  registry.npmjs.org/@material-ui/system/4.11.3_6c71570cf1eaf82f67c470a9cc4d93bc:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
-      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2_react-dom@16.13.1+react@16.13.1
+      '@types/react': registry.npmjs.org/@types/react/16.9.43
       csstype: registry.npmjs.org/csstype/2.6.17
       prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
     dev: false
     engines:
       node: '>=8.0.0'
@@ -231,9 +253,9 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@material-ui/system/-/system-4.11.3.tgz
     version: 4.11.3
-  registry.npmjs.org/@material-ui/types/5.1.0_@types+react@16.14.5:
+  registry.npmjs.org/@material-ui/types/5.1.0_@types+react@16.9.43:
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@types/react': registry.npmjs.org/@types/react/16.9.43
     dev: false
     id: registry.npmjs.org/@material-ui/types/5.1.0
     name: '@material-ui/types'
@@ -247,14 +269,17 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@material-ui/types/-/types-5.1.0.tgz
     version: 5.1.0
-  registry.npmjs.org/@material-ui/utils/4.11.2:
+  registry.npmjs.org/@material-ui/utils/4.11.2_react-dom@16.13.1+react@16.13.1:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
       prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
       react-is: registry.npmjs.org/react-is/17.0.2
     dev: false
     engines:
       node: '>=8.0.0'
+    id: registry.npmjs.org/@material-ui/utils/4.11.2
     name: '@material-ui/utils'
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -283,13 +308,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@testing-library/dom/-/dom-7.30.4.tgz
     version: 7.30.4
-  registry.npmjs.org/@testing-library/react/11.2.6:
+  registry.npmjs.org/@testing-library/react/11.2.6_react-dom@16.13.1+react@16.13.1:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
       '@testing-library/dom': registry.npmjs.org/@testing-library/dom/7.30.4
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
     dev: true
     engines:
       node: '>=10'
+    id: registry.npmjs.org/@testing-library/react/11.2.6
     name: '@testing-library/react'
     peerDependencies:
       react: '*'
@@ -307,6 +335,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/aria-query/-/aria-query-4.2.1.tgz
     version: 4.2.1
+  registry.npmjs.org/@types/history/4.7.8:
+    dev: true
+    name: '@types/history'
+    resolution:
+      integrity: sha512-S78QIYirQcUoo6UJZx9CSP0O2ix9IaeAXwQi26Rhr/+mg7qqPy8TzaxHSUut7eGjL8WmLccT7/MXf304WjqHcA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/history/-/history-4.7.8.tgz
+    version: 4.7.8
   registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3:
     dev: true
     name: '@types/istanbul-lib-coverage'
@@ -335,17 +371,17 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.0.tgz
     version: 3.0.0
-  registry.npmjs.org/@types/jest/26.0.22:
+  registry.npmjs.org/@types/jest/26.0.20:
     dependencies:
       jest-diff: registry.npmjs.org/jest-diff/26.6.2
       pretty-format: registry.npmjs.org/pretty-format/26.6.2
     dev: true
     name: '@types/jest'
     resolution:
-      integrity: sha512-eeWwWjlqxvBxc4oQdkueW5OF/gtfSceKk4OnOAGlUSwS/liBRtZppbJuz1YkgbrbfGOoeBHun9fOvXnjNwrSOw==
+      integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/jest/-/jest-26.0.22.tgz
-    version: 26.0.22
+      tarball: https://registry.npmjs.org/@types/jest/-/jest-26.0.20.tgz
+    version: 26.0.20
   registry.npmjs.org/@types/node/12.20.4:
     dev: true
     name: '@types/node'
@@ -361,6 +397,29 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz
     version: 15.7.3
+  registry.npmjs.org/@types/react-router-dom/5.1.7:
+    dependencies:
+      '@types/history': registry.npmjs.org/@types/history/4.7.8
+      '@types/react': registry.npmjs.org/@types/react/17.0.3
+      '@types/react-router': registry.npmjs.org/@types/react-router/5.1.13
+    dev: true
+    name: '@types/react-router-dom'
+    resolution:
+      integrity: sha512-D5mHD6TbdV/DNHYsnwBTv+y73ei+mMjrkGrla86HthE4/PVvL1J94Bu3qABU+COXzpL23T1EZapVVpwHuBXiUg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.1.7.tgz
+    version: 5.1.7
+  registry.npmjs.org/@types/react-router/5.1.13:
+    dependencies:
+      '@types/history': registry.npmjs.org/@types/history/4.7.8
+      '@types/react': registry.npmjs.org/@types/react/17.0.3
+    dev: true
+    name: '@types/react-router'
+    resolution:
+      integrity: sha512-ZIuaO9Yrln54X6elg8q2Ivp6iK6p4syPsefEYAhRDAoqNh48C8VYUmB9RkXjKSQAJSJV0mbIFCX7I4vZDcHrjg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/react-router/-/react-router-5.1.13.tgz
+    version: 5.1.13
   registry.npmjs.org/@types/react-transition-group/4.4.1:
     dependencies:
       '@types/react': registry.npmjs.org/@types/react/17.0.3
@@ -371,24 +430,22 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.1.tgz
     version: 4.4.1
-  registry.npmjs.org/@types/react/16.14.5:
+  registry.npmjs.org/@types/react/16.9.43:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
-      '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
-      csstype: registry.npmjs.org/csstype/3.0.8
+      csstype: registry.npmjs.org/csstype/2.6.17
     dev: true
     name: '@types/react'
     resolution:
-      integrity: sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
+      integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react/-/react-16.14.5.tgz
-    version: 16.14.5
+      tarball: https://registry.npmjs.org/@types/react/-/react-16.9.43.tgz
+    version: 16.9.43
   registry.npmjs.org/@types/react/17.0.3:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
       csstype: registry.npmjs.org/csstype/3.0.8
-    dev: false
     name: '@types/react'
     resolution:
       integrity: sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
@@ -551,6 +608,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.11.0.tgz
     version: 3.11.0
+  registry.npmjs.org/core-js/3.8.3:
+    dev: false
+    name: core-js
+    requiresBuild: true
+    resolution:
+      integrity: sha512-KPYXeVZYemC2TkNEkX/01I+7yd+nX3KddKwZ1Ww7SKWdI2wQprSgLmrTddT8nw92AjEklTsPBoSdQBhbI1bQ6Q==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.8.3.tgz
+    version: 3.8.3
   registry.npmjs.org/css-vendor/2.0.8:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
@@ -563,7 +629,6 @@ packages:
       tarball: https://registry.npmjs.org/css-vendor/-/css-vendor-2.0.8.tgz
     version: 2.0.8
   registry.npmjs.org/csstype/2.6.17:
-    dev: false
     name: csstype
     resolution:
       integrity: sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A==
@@ -864,6 +929,23 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz
     version: 15.7.2
+  registry.npmjs.org/react-dom/16.13.1_react@16.13.1:
+    dependencies:
+      loose-envify: registry.npmjs.org/loose-envify/1.4.0
+      object-assign: registry.npmjs.org/object-assign/4.1.1
+      prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/16.13.1
+      scheduler: registry.npmjs.org/scheduler/0.19.1
+    dev: false
+    id: registry.npmjs.org/react-dom/16.13.1
+    name: react-dom
+    peerDependencies:
+      react: ^16.13.1
+    resolution:
+      integrity: sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/react-dom/-/react-dom-16.13.1.tgz
+    version: 16.13.1
   registry.npmjs.org/react-is/16.13.1:
     dev: false
     name: react-is
@@ -879,13 +961,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz
     version: 17.0.2
-  registry.npmjs.org/react-transition-group/4.4.1:
+  registry.npmjs.org/react-transition-group/4.4.1_react-dom@16.13.1+react@16.13.1:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.13.17
       dom-helpers: registry.npmjs.org/dom-helpers/5.2.0
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
       prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/16.13.1
+      react-dom: registry.npmjs.org/react-dom/16.13.1_react@16.13.1
     dev: false
+    id: registry.npmjs.org/react-transition-group/4.4.1
     name: react-transition-group
     peerDependencies:
       react: '>=16.6.0'
@@ -895,6 +980,20 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz
     version: 4.4.1
+  registry.npmjs.org/react/16.13.1:
+    dependencies:
+      loose-envify: registry.npmjs.org/loose-envify/1.4.0
+      object-assign: registry.npmjs.org/object-assign/4.1.1
+      prop-types: registry.npmjs.org/prop-types/15.7.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    name: react
+    resolution:
+      integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/react/-/react-16.13.1.tgz
+    version: 16.13.1
   registry.npmjs.org/regenerator-runtime/0.13.7:
     name: regenerator-runtime
     resolution:
@@ -902,6 +1001,17 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz
     version: 0.13.7
+  registry.npmjs.org/scheduler/0.19.1:
+    dependencies:
+      loose-envify: registry.npmjs.org/loose-envify/1.4.0
+      object-assign: registry.npmjs.org/object-assign/4.1.1
+    dev: false
+    name: scheduler
+    resolution:
+      integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz
+    version: 0.19.1
   registry.npmjs.org/supports-color/5.5.0:
     dependencies:
       has-flag: registry.npmjs.org/has-flag/3.0.0
