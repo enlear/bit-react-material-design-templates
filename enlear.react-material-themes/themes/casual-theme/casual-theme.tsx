@@ -31,4 +31,4 @@ export function CasualTheme({ children }: CasualThemeProps) {
       {children}
     </ThemeProvider>
   );
-}
+};

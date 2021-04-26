@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export type HeaderProps = {
+export interface HeaderProps extends React.HTMLAttributes<React.ReactNode> {
   /**
    * Header title
    */
@@ -41,4 +41,4 @@ export function Header({ title }: HeaderProps) {
       </Toolbar>
     </AppBar>
   );
-}
+};

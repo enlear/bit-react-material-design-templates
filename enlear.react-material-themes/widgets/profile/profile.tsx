@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export type ProfileProps = {
+export interface ProfileProps extends React.HTMLAttributes<React.ReactNode> {
   /**
    * a Name of the person
    */
@@ -86,4 +86,4 @@ export function Profile({ name, title, workSummary, onHire }: ProfileProps) {
       </CardActions>
     </Card>
   );
-}
+};

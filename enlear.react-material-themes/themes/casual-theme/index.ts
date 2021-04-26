@@ -1,1 +1,2 @@
-export { CasualTheme, CasualThemeProps } from './casual-theme';
+export { CasualTheme } from './casual-theme';
+export type { CasualThemeProps } from './casual-theme';

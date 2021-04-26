@@ -1,2 +1,2 @@
-export { BusinessTheme, BusinessThemeProps } from './business-theme';
-
+export { BusinessTheme } from './business-theme';
+export type { BusinessThemeProps } from './business-theme';

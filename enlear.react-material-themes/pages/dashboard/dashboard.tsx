@@ -3,7 +3,7 @@ import { Profile, ProfileProps } from '@enlear/react-material-themes.widgets.pro
 import Grid from '@material-ui/core/Grid';
 import React from 'react';
 
-export type DashboardProps = {
+export interface DashboardProps extends React.HTMLAttributes<React.ReactNode> {
   /**
    * Profiles array
    */
@@ -30,4 +30,4 @@ export function Dashboard({ profiles }: DashboardProps) {
       </Grid>
     </Grid>
   );
-}
+};
