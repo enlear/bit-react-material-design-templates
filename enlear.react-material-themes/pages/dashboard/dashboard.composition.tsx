@@ -1,10 +1,9 @@
 import { BusinessTheme } from '@enlear/react-material-themes.themes.business-theme';
 import { CasualTheme } from '@enlear/react-material-themes.themes.casual-theme';
-import { ProfileProps } from '@enlear/react-material-themes.widgets.profile';
 import React from 'react';
 import { Dashboard } from './dashboard';
 
-const profiles: ProfileProps[] = [{
+const profiles = [{
   name: "Cheryl Chavez",
   title: "Software Developer",
   workSummary: "Developer with experiance on developing, testing and implementing new software programs."
