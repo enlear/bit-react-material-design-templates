@@ -24,7 +24,7 @@
 
 
      **/
-    "name": "my-workspace-name",
+    "name": "react-material-themes",
     /**
 
 
@@ -68,6 +68,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@testing-library/react": "11.2.6"
       },
       "peerDependencies": {
         "@material-ui/core": "4.11.3",
