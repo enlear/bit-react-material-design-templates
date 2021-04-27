@@ -9,9 +9,19 @@ export function BusinessTheme({ children }: BusinessThemeProps) {
   const businessTheme = createMuiTheme({
     typography: {
       button: {
-        background: blue[400]
-      }
+        background: '#3f51b5',
+        color: '#ffffff'
+      },
+      fontFamily: [
+        'Sans Serf',
+        'Arial'
+      ].join(',')
     },
+    palette: {
+      primary: {
+        main: "#3f51b5"
+      }
+    }
   });
 
   return (
