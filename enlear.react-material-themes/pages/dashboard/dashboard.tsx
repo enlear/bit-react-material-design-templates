@@ -13,7 +13,7 @@ export interface DashboardProps extends React.HTMLAttributes<React.ReactNode> {
 export function Dashboard({ profiles }: DashboardProps) {
 
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" spacing={2}>
       <Grid item>
         <Header title="Employees"></Header>
       </Grid>

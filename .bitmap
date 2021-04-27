@@ -3,31 +3,31 @@
 {
     "pages/dashboard": {
         "scope": "enlear.react-material-themes",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "enlear.react-material-themes/pages/dashboard"
     },
     "themes/business-theme": {
         "scope": "enlear.react-material-themes",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "enlear.react-material-themes/themes/business-theme"
     },
     "themes/casual-theme": {
         "scope": "enlear.react-material-themes",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "enlear.react-material-themes/themes/casual-theme"
     },
     "widgets/header": {
         "scope": "enlear.react-material-themes",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "enlear.react-material-themes/widgets/header"
     },
     "widgets/profile": {
         "scope": "enlear.react-material-themes",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "enlear.react-material-themes/widgets/profile"
     },
