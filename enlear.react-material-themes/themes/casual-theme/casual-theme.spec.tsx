@@ -4,8 +4,8 @@ import { BasicCasualTheme } from './casual-theme.composition';
 
 describe('casual-theme', () => {
   it('should render with the correct text', () => {
-    const { getByRole } = render(<BasicCasualTheme />);
-    const rendered = getByRole('button');
+    const { getByText } = render(<BasicCasualTheme />);
+    const rendered = getByText('Employees');
     expect(rendered).toBeTruthy();
   });
 });

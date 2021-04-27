@@ -4,8 +4,8 @@ import { BasicBusinessTheme } from './business-theme.composition';
 
 describe('business-theme', () => {
   it('should render with the correct text', () => {
-    const { getByRole } = render(<BasicBusinessTheme />);
-    const rendered = getByRole('button');
+    const { getByText } = render(<BasicBusinessTheme />);
+    const rendered = getByText('Employees');
     expect(rendered).toBeTruthy();
   });
 });

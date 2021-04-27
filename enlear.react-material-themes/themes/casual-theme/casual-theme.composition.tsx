@@ -6,25 +6,25 @@ import { CasualTheme } from './casual-theme';
 
 export const CasualThemeHeader = () => (
     <CasualTheme>
-      <Header title="Employees" />
+        <Header title="Employees" />
     </CasualTheme>
 );
-  
-export const BusinessThemeProfile = () => (
-<CasualTheme>
-    <Profile name="Alyssa Park" title="Software Developer" workSummary="Engineer with experiance on developing, testing and implementing new software programs." />
-</CasualTheme>
-);
-  
-export const BasicBusinessTheme = () => (
-<CasualTheme>
-    <Grid container direction="column">
-    <Grid item>
-        <Header title="Employees" />
-    </Grid>
-    <Grid item>
+
+export const CasualThemeProfile = () => (
+    <CasualTheme>
         <Profile name="Alyssa Park" title="Software Developer" workSummary="Engineer with experiance on developing, testing and implementing new software programs." />
-    </Grid>
-    </Grid>
-</CasualTheme>
+    </CasualTheme>
+);
+
+export const BasicCasualTheme = () => (
+    <CasualTheme>
+        <Grid container direction="column">
+            <Grid item>
+                <Header title="Employees" />
+            </Grid>
+            <Grid item>
+                <Profile name="Alyssa Park" title="Software Developer" workSummary="Engineer with experiance on developing, testing and implementing new software programs." />
+            </Grid>
+        </Grid>
+    </CasualTheme>
 );
